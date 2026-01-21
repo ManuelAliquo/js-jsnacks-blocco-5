@@ -22,6 +22,8 @@ const students = [
 // Recupera la classe dello studente 'Marco Lanci'
 const foundStudent = students.find((student) => student.name === "Marco Lanci");
 
-console.log(foundStudent.class);
+const foundStudentClass = foundStudent ? foundStudent.class : "L'alunno non è presente nella lista";
+
+console.log(foundStudentClass);
 
 // Risultato: '3C'
